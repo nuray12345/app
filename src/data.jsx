@@ -1,10 +1,10 @@
-// data.jsx
-import React, { useEffect } from 'react';
+export const waysData = [
+    { name: 'Главная', href: '/' },
+    { name: 'О нас', href: '/about' },
+];
 
-export const Ways = () => {
-    useEffect(() => {
-        // Ваш код здесь
-    }, []);
-
-    return <div>Content</div>;
+export const differences = {
+    news: 'новости гиспро и только',
+    services: 'готовим сайты',
+    about: 'вместе мы сила',
 };

@@ -1,17 +1,18 @@
-// App.jsx
-import React from 'react';
-import Header from "./components/Header";  
-import Content from "./components/Content/Content.css";
-import { Ways } from "./data";  
+import Header from './front/components/Header/Header';
+import Content from './front/components/Content';  
+import { useState } from 'react';
 
-const App = () => {
+export default function App() {
+    const [content, setContent] = useState('Tap the button');
+
+    const handleClick = (type) => {
+        setContent(type); // ✅ Correct way to update state
+    };
+
     return (
         <div>
-            <Header />  {/* Компонент Header */}
-            <Ways />  
-            <Content/>  {/* Компонент Ways */}
+            <Header handleClick={handleClick} />  {/* Pass handleClick as prop */}
+            <Content />
         </div>
     );
-};
-
-export default App;
+}
