@@ -1,8 +1,8 @@
 import React from 'react';
 import Button from '../Button/Button';
-import './Header.scss'; 
+import './Header.sass';
 
-export default function Header() { 
+export default function Header() {
     // Объявляем функцию handleClick
     const handleClick = (type) => {
         console.log(type); // Можешь заменить на нужную логику
@@ -16,7 +16,15 @@ export default function Header() {
                     <img src="/logo.png" alt="Logo" width="40" height="35" />
                     GIS pro
                 </a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">

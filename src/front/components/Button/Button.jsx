@@ -1,4 +1,4 @@
-import './Button.scss';
+import './Button.sass';
 import React from 'react';
 
 // Правильный экспорт компонента
