@@ -10,5 +10,4 @@ const Button = ({ children, onClick }) => {
     );
 };
 
-// Экспорт компонента
 export default Button;
