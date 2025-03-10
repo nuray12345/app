@@ -1,12 +1,12 @@
 import React from 'react';
-import './Paralax.sass';  // Подключение стилей для параллакса
+import './Paralax.sass';
 
 export default function Parallax() {
     return (
         <div className="parallax-container">
             {/* Параллакс с фоном */}
-            <div className="parallax" style={{ backgroundImage: `url('/img/parallax.jpg')` }}>
-                {/* Можно вставить картинку с использованием CSS */}
+            <div className="parallax" style={{ backgroundImage: "url('/img/bg5.jpg')" }}>
+                {/* Фон подгружается напрямую из public */}
             </div>
 
             {/* Текст на параллаксе */}
