@@ -1,11 +1,11 @@
 import React from 'react';
 import Button from '../Button/Button';
-import './Header.scss'; 
+import './Header.sass';
 
-export default function Header() { 
+export default function Header() {
     // Объявляем функцию handleClick
     const handleClick = (type) => {
-        console.log(type); // Можешь заменить на нужную логику
+        console.log(type);
     };
 
     return (

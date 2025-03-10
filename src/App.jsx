@@ -1,5 +1,5 @@
 import Header from './front/components/Header/Header';
-import Content from './front/components/Content';  
+import Parallax from './front/components/Paralax/Paralax.jsx';
 import { useState } from 'react';
 
 export default function App() {
@@ -12,7 +12,7 @@ export default function App() {
     return (
         <div>
             <Header handleClick={handleClick} />  {/* Pass handleClick as prop */}
-            <Content />
+            <Parallax/>
         </div>
     );
 }

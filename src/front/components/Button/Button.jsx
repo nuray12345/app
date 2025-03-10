@@ -1,4 +1,4 @@
-import './Button.scss';
+import './Button.sass';
 import React from 'react';
 
 // Правильный экспорт компонента
@@ -10,5 +10,4 @@ const Button = ({ children, onClick }) => {
     );
 };
 
-// Экспорт компонента
 export default Button;
