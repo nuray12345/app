@@ -42,5 +42,6 @@ export default function Parallax() {
                 </h4>
             </div>
         </div>
+
     );
 }
