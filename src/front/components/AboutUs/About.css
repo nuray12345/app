@@ -1,0 +1,20 @@
+.about-us {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #252A2E;
+    border-radius: 8px;
+  }
+  
+  .about-us h2 {
+    font-size: 24px;
+    color: white;
+    text-align: center; /* Центрируем заголовок */
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-size: 18px;
+    color: white;
+    text-align: center; /* Центрируем текст */
+  }
+  

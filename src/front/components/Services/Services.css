@@ -1,0 +1,30 @@
+.what-we-can {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #252a2e;
+    border-radius: 8px;
+  }
+  
+  .what-we-can h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center; /* Центрируем заголовок */
+  }
+  
+  
+  .what-we-can ul {
+    color: white;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .what-we-can li {
+    font-size: 18px;
+    margin: 10px 0;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #DAA520;
+  }
+  

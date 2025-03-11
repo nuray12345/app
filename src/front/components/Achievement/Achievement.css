@@ -1,0 +1,21 @@
+.achievement-block {
+    background-color: #252A2E;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .achievement-block h4 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .achievement-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .achievement-item {
+    text-align: center;
+  }
+  
