@@ -1,7 +1,6 @@
 import './Button.sass';
 import React from 'react';
 
-// Правильный экспорт компонента
 const Button = ({ children, onClick }) => {
     return (
         <button className='button active' onClick={onClick}>
@@ -9,5 +8,4 @@ const Button = ({ children, onClick }) => {
         </button>
     );
 };
-
 export default Button;

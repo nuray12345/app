@@ -1,15 +1,11 @@
 import React from "react";
 import "./CardHeader.sass";
 
-const CardHeader = ({ title, description }) => {
+const CardHeader = ({ imageSrc, altText }) => {
     return (
         <div className="card-header">
             <div className="card-header-image-container">
-                <img src="/img/products/1.jpg" alt={title} className="card-header-image" />
-            </div>
-            <div className="card-header-info">
-                <h2 className="card-header-title">{title}</h2>
-                <p className="card-header-description">{description}</p>
+                <img src="/img/products/1.jpg" alt={altText} className="card-header-image" />
             </div>
         </div>
     );

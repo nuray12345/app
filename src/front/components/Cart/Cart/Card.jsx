@@ -2,21 +2,20 @@ import React from "react";
 import CardHeader from "../CardHeader/CardHeader";
 import CardFooter from "../CardFooter/CardFooter";
 import './style.sass'
+import CardContent from "../CardContent/CardContent";
 
 const Card = () => {
     const items = [
         {
-            title: "Karte 1",
             content: "Dies ist die erste Karte.",
             footer: "Mehr erfahren",
         },
         {
-            title: "Karte 2",
             content: "Hier ist eine zweite Karte.",
             footer: "Mehr erfahren",
         },
         {
-            title: "Karte 3",
+
             content: "Und noch eine dritte Karte.",
             footer: "Mehr erfahren",
         },
@@ -26,8 +25,11 @@ const Card = () => {
         <div className="cards-container">
             {items.map((item, index) => (
                 <div className="card" key={index}>
-                    <CardHeader title={item.title} />
-                    <div className="card-content">{item.content}</div>
+                     <CardHeader imageSrc="/img/products/bg5.jpg" altText="Produkt 1" />
+                    <CardContent>
+                        {"This is the large text"}
+                        {"This is the small text"}
+                    </CardContent>
                     <CardFooter footerContent={item.footer} />
                 </div>
             ))}
