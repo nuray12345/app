@@ -1,29 +1,19 @@
-$mobile: 600px
-$mobile-xs: 400px
+.card-footer
+  display: flex
+  justify-content: center  // Центрируем кнопку
+  padding: 10px
+  border-top: 1px solid #ddd
+  background-color: #f9f9f9  // Светлый фон для футера
 
-.cart-footer
-  display: grid
-  grid-template-columns: 2fr repeat(3, 3fr) 1fr
-  column-gap: 30px
+.card-footer-button
+  padding: 10px 20px
+  font-size: 16px
+  background-color: #007bff  // Синий цвет кнопки
+  color: white
+  border: none
+  border-radius: 4px
+  cursor: pointer
+  transition: background-color 0.3s ease
 
-  padding: 19px 0
-  background: #EAEFF2
-
-  font-weight: 700
-  font-size: 18px
-  line-height: 1.2
-
-  @media (max-width: $mobile)
-    padding-left: 15px
-    padding-right: 15px
-    grid-template-columns: 1fr 1fr
-
-  @media (max-width: $mobile-xs)
-    grid-template-columns: 1fr
-    row-gap: 10px
-
-.cart-footer__count
-  grid-column-start: 3
-
-  @media (max-width: $mobile)
-    grid-column-start: 1
+.card-footer-button:hover
+  background-color: #0056b3  // Тёмно-синий при наведении

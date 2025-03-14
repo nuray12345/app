@@ -1,13 +1,18 @@
-import "./CardHeader.sass"
+import React from "react";
+import "./CardHeader.sass";
 
-const CartHeader = () => {
+const CardHeader = ({ title, description }) => {
     return (
-        <header className='cart-header'>
-            <div className='cart-header__title'>наименование</div>
-            <div className='cart-header__count'>количество</div>
-            <div className='cart-header__cost'>стоимость</div>
-        </header>
+        <div className="card-header">
+            <div className="card-header-image-container">
+                <img src="/img/products/1.jpg" alt={title} className="card-header-image" />
+            </div>
+            <div className="card-header-info">
+                <h2 className="card-header-title">{title}</h2>
+                <p className="card-header-description">{description}</p>
+            </div>
+        </div>
     );
-}
+};
 
-export default CartHeader;
+export default CardHeader;

@@ -1,12 +1,12 @@
-import React from 'react';
-import './CardFooter.sass'
+import React from "react";
+import "./CardFooter.sass";
 
-const CartFooter = ({ total }) => {
+const CardFooter = ({ buttonText }) => {
     return (
-        <footer className='cart-footer'>
-
-        </footer>
+        <div className="card-footer">
+            <button className="card-footer-button">{buttonText}</button>
+        </div>
     );
 };
 
-export default CartFooter;
+export default CardFooter;

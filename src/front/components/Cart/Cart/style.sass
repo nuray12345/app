@@ -1,0 +1,39 @@
+.cards-container
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))  // Адаптивная сетка для карточек
+  gap: 50px
+  padding: 20px
+@media (max-width: 600px)
+.card
+  border: 1px solid #ddd
+  border-radius: 8px
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+  background-color: white
+  overflow: hidden
+  display: flex
+  flex-direction: column  // Обеспечиваем вертикальное расположение
+
+.card-content
+  padding: 15px
+  font-size: 14px
+  color: #555
+  flex-grow: 1  // Чтобы контент заполнил доступное пространство
+
+.card-footer
+  display: flex
+  justify-content: center
+  padding: 10px
+  background-color: #f9f9f9
+
+.card-footer-button
+  padding: 10px 20px
+  font-size: 16px
+  background-color: #007bff
+  color: white
+  border: none
+  border-radius: 4px
+  cursor: pointer
+  transition: background-color 0.3s ease
+
+.card-footer-button:hover
+  background-color: #0056b3

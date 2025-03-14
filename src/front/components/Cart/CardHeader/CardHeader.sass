@@ -1,25 +1,29 @@
-$mobile: 600px
-$mobile-xs: 400px
+.card-header
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  border: 1px solid #ddd
+  border-radius: 8px
+  padding: 10px
 
-.cart-header
-  display: grid
-  grid-template-columns: 2fr repeat(3, 3fr) 1fr
-  column-gap: 30px
+.card-header-image-container
+  width: 30%  // 30% для картинки
+  padding-right: 10px  // Пробел между картинкой и текстом
 
-  padding: 22px 0
-  background-color: #EAEFF2
+.card-header-image
+  width: 100%
+  height: auto
+  object-fit: cover  // Чтобы изображение не искажалось
 
-  font-weight: 700
-  font-size: 13px
-  line-height: 1.2
-  letter-spacing: 0.2em
-  text-transform: uppercase
+.card-header-info
+  width: 70%  // 70% для текста
+  padding-left: 10px
 
-  @media (max-width: $mobile)
-    height: 1px
-    padding: 0
-    & > *
-      display: none
+.card-header-title
+  font-size: 24px
+  font-weight: bold
+  margin-bottom: 10px
 
-.cart-header__title
-  grid-column-start: 2
+.card-header-description
+  font-size: 16px
+  color: #666
