@@ -1,40 +1,78 @@
+:root
+  --primary-color: #0d6efd
+  --secondary-color: #6c757d
+  --background-color: #252a2e
+  --text-color: white
+  --card-bg: #343a40
+  --card-border: #495057
+  --link-color: #daa520
+  --hover-link-color: #b8860b
+
+body
+  color: var(--text-color)
+  background-color: var(--background-color)
+  font-family: PoiretOne, sans-serif
+  font-size: 20px
+  margin: 100px auto
+  text-align: center
+
+a
+  color: var(--link-color)
+  text-decoration: underline
+  &:hover
+    color: var(--hover-link-color)
+
 .cards-container
   display: grid
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))  // Адаптивная сетка для карточек
-  gap: 50px
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+  gap: 80px
   padding: 20px
-@media (max-width: 600px)
+
 .card
-  border: 1px solid #ddd
+  background-color: var(--card-bg)
+  border: 1px solid var(--card-border)
   border-radius: 8px
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
-  background-color: #282c34
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
   overflow: hidden
   display: flex
-  flex-direction: column  // Обеспечиваем вертикальное расположение
+  flex-direction: column
+  transition: transform 0.3s ease
+  &:hover
+    transform: scale(1.05)
 
+.card-img-top
+  height: 225px
+  width: 100%
+  object-fit: cover
+  border-top-left-radius: 8px
+  border-top-right-radius: 8px
 
 .card-content
   padding: 15px
-  font-size: 14px
-  color: #555
   flex-grow: 1
 
+.card-text
+  font-size: 18px
+  color: var(--text-color)
+
 .card-footer
-  display: flex
-  justify-content: center
   padding: 10px
-  background-color: #282c34
+  background-color: var(--card-bg)
 
-.card-footer-button
-  padding: 10px 20px
-  font-size: 16px
-  background-color: #007bff
-  color: white
-  border: none
-  border-radius: 4px
+.card-footer-text
+  color: var(--primary-color)
+  font-size: 14px
   cursor: pointer
-  transition: background-color 0.3s ease
+  text-decoration: underline
+  transition: color 0.3s ease
+  &:hover
+    color: var(--hover-link-color)
 
-.card-footer-button:hover
-  background-color: #0056b3
+@media (max-width: 600px)
+  .cards-container
+    grid-template-columns: 1fr
+
+.card-subtext
+  font-size: 16px
+  color: #adb5bd  // Серый цвет, чтобы текст выглядел менее выделяющимся
+  margin-top: -5px

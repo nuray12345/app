@@ -1,22 +1,22 @@
 import React from "react";
-import CardHeader from "../CardHeader/CardHeader";
-import CardFooter from "../CardFooter/CardFooter";
-import './style.sass'
-import CardContent from "../CardContent/CardContent";
+import CardHeader from "./CardHeader/CardHeader";
+import './style.sass';
 
 const Card = () => {
     const items = [
         {
-            content: "Dies ist die erste Karte.",
+            content: "1-karte",
+            subtext: "Zusätzliche Info", // Новый текст
             footer: "Mehr erfahren",
         },
         {
             content: "Hier ist eine zweite Karte.",
-            footer: "Mehr erfahren",
+            subtext: "Noch mehr Details",
+            footer: "data",
         },
         {
-
             content: "Und noch eine dritte Karte.",
+            subtext: "Letzte Zusatzinfo",
             footer: "Mehr erfahren",
         },
     ];
@@ -25,16 +25,23 @@ const Card = () => {
         <div className="cards-container">
             {items.map((item, index) => (
                 <div className="card" key={index}>
-                     <CardHeader imageSrc="/img/products/bg5.jpg" altText="Produkt 1" />
-                    <CardContent>
-                        {"This is the large text"}
-                        {"This is the small text"}
-                    </CardContent>
-                    <CardFooter footerContent={item.footer} />
+                    <CardHeader imageSrc="/img/products/bg5.jpg" altText={`Produkt ${index + 1}`} />
+                    <IndexCard content={item.content} subtext={item.subtext} footer={item.footer} />
                 </div>
             ))}
         </div>
     );
 };
+
+const IndexCard = ({ content, subtext, footer }) => {
+    return (
+        <div className="card-content">
+            <p className="card-text">{content}</p>
+            <p className="card-subtext">{subtext}</p>
+            <span className="card-footer-text">{footer}</span>
+        </div>
+    );
+};
+
 
 export default Card;
