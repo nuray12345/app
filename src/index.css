@@ -15,6 +15,7 @@ code {
   font-family: 'Montserrat';
   src: url('../assets/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('ttf');
 }
+
 .achievement-text{
 font-family: 'MyCustomFont', sans-serif ;
  font-size: 16px;
