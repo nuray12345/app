@@ -3,7 +3,7 @@ import Parallax from './front/components/Paralax/Paralax.jsx';
 import { useState } from 'react';
 import Card from "./front/components/Cart/Cart/Card";
 import {Fragment} from "react";
-
+import Achievements from "./front/components/Icons/Achievements";
 export default function App() {
     const [content, setContent] = useState('Tap the button');
 
@@ -16,6 +16,7 @@ export default function App() {
             <Header handleClick={handleClick} />  {/* Pass handleClick as prop */}
             <Parallax/>
             <Card/>
+            <Achievements/>
         </>
     );
 }
