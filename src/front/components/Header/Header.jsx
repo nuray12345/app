@@ -13,7 +13,7 @@ export default function Header() {
             <div className="container">
                 <a className="navbar-brand" href="#">
                     {/* Логотип загружается из папки public */}
-                    <img src="/logo.png" alt="Logo" width="40" height="35" />
+                    <img src="/logo2.png" alt="Logo" width="40" height="35" />
                     GIS pro
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
